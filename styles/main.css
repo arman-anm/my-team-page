@@ -31,14 +31,13 @@ font-family: 'PT Serif', serif;
 }
 
 
-
-
 /* Global Styles */
 h1 {
   font-family: var(--ff-title);
   font-size: var(--fs-larger);
   font-weight: var(--fw-bold);
   color: var(--color-primary);
+  line-height: 1.15;
 }
 
 h2 {
@@ -54,6 +53,7 @@ p {
   font-weight: var(--fw-normal);
   color: var(--color-primary);
   margin-top: var(--margin-short);
+  line-height: 1.75;
 }
 
 
