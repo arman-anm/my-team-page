@@ -21,8 +21,8 @@ font-family: 'PT Serif', serif;
   --color-gray: #A9A9A9; 
   --fs-default: clamp(1.6rem, 5vw, 2.4rem);  /* 16px to 24px based on screen size */
   --fs-small: calc(var(--fs-default) * .6);  /* Roughly about 9.6px to 14.4px */
-  --fs-large: calc(var(--fs-default) * 1.5);  /* 20px to 30px */
-  --fs-larger: calc(var(--fs-default) * 3);  /* minimum 32px to maximum 48px  */
+  --fs-large: calc(var(--fs-default) * 1.5);  /* 24px to 36px */
+  --fs-larger: calc(var(--fs-default) * 3);  /* minimum 48px to maximum 72px  */
   --padding-default: clamp(5px, 5vw, 150px);
   --padding-short: 15px;
   --margin-default: clamp(15px, 5vw, 60px);
@@ -89,8 +89,7 @@ body {
   justify-content: center;
   max-width: 100%;
   margin-top: var(--margin-default);
-  margin-right: var(--margin-default);  
-  /* when i rotated the '.imageWrapper>figcaption' clockwise it jumped out of the content flow & overflowed. this margin would give that element a breathing space */
+  margin-right: var(--margin-default);  /* when i rotated the '.imageWrapper>figcaption' clockwise it jumped out of the content flow & overflowed. this margin would give that element a breathing space */
 }
 
 .card {
@@ -137,22 +136,18 @@ footer a {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: var(--margin-extended);
-    margin-right: 0;
-    /* previous margin was only for mobile view */
+    margin-right: 0;  /* previous margin was only for mobile view */
 
   }
 
   .card {
     max-width: 40%;
-    margin-top: 0;
-    /* resets the previous value */
+    margin-top: 0;  /* resets the previous value */
   }
 
   .card:nth-child(even) {
     margin-top: var(--margin-extended);
   }
-
- 
 
 }
 
@@ -180,21 +175,19 @@ footer a {
 
   .card {
     max-width: 30%;
-    margin-top: 0;
-      /* Resets previous margin */
+    margin-top: 0;  /* Resets previous margin */
   }
 
   .card:nth-child(even) {
-    margin-top: 0;
-    /* Resets previous value */
+    margin-top: 0;  /* Resets previous value */
   }
 
   .card:nth-child(3n + 2) {
-    margin-top: var(--margin-extended);
+    margin-top: var(--margin-extended);  /* Gives margin to the second child and every third after that */
   }
 
   .imageWrapper img {
-    max-width: 90%;
+    max-width: 90%;  /* Resizes image a little bit  */
   }
 }
 
