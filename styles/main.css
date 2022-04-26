@@ -53,7 +53,7 @@ p {
   font-weight: var(--fw-normal);
   color: var(--color-primary);
   margin-top: var(--margin-short);
-  line-height: 1.75;
+  line-height: 1.5;
 }
 
 
@@ -88,7 +88,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
-  margin-top: var(--margin-extended);
+  margin-top: var(--margin-default);
   margin-right: var(--margin-default);  
   /* when i rotated the '.imageWrapper>figcaption' clockwise it jumped out of the content flow & overflowed. this margin would give that element a breathing space */
 }
@@ -136,6 +136,7 @@ footer a {
   .cardsWrapper {
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: var(--margin-extended);
     margin-right: 0;
     /* previous margin was only for mobile view */
 
